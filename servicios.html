@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SGP</title>
+  <link rel="icon" href="https://pdjconsultores.com/wp-content/uploads/2018/05/logo-pdj-consultores.jpg"
+    type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<!-- Bootstrap core CSS -->
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.0/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.0/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.0/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+
+
+  h1,
+  h3 {
+    color: #434e68;
+  }
+
+  .review-form {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #fffbfb;
+    border-radius: 5px;
+  }
+
+  .review-form label {
+    font-weight: bold;
+  }
+
+  .review-form input,
+  .review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #475477;
+    border-radius: 3px;
+  }
+
+  .review-form button {
+    background-color: #1f6783;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .review-form button:hover {
+    background-color: #29435c;
+  }
+
+  .review {
+    background-color: #0b1220;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .review h4 {
+    margin-bottom: 5px;
+  }
+
+  .review p {
+    color: #e6dfdf;
+  }
+
+  review-form {
+    padding: 20px;
+  }
+</style>
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Acerca de</h4>
+            <p class="text-muted">Ofrecemos varios servicios, como cortes de pelo, tintes, peinados, tratamientos
+              capilares y, en ocasiones, servicios de barbería. Estos lugares se encargan de mantener tu cabello
+              saludable y con un aspecto estupendo, adaptándose a tus necesidades y estilo personal..</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contactacnos</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="text-white">Seguir en Twitter</a></li>
+              <li><a href="https://www.facebook.com/" class="text-white">Me gusta en Facebook</a></li>
+              <li><a href="" class="text-white">Email</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="inicio.html"
+          class="navbar-brand d-flex align-items-center">
+          <img src="https://png.pngtree.com/png-clipart/20220530/original/pngtree-salon-logo-png-image_7766853.png"
+            width="50" height="50" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+          <circle cx="12" cy="13" r="4" />
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="b-example-divider"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://zolmi.es/assets/img/es/programa-peluqueria-gratis.png" class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Precios</h1>
+          <p class="lead">El único software gratuito para profesionales de belleza y bienestar.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+           <a href="inicio.html#sesion-llamada"> <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Registrate gratis</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog"
+      id="modalSignin">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+
+
+
+          <center>
+            <h3 class="display-6 fw-bold lh-1 mb-3">Reseñas de nuestros servicios</h3>
+          </center>
+
+          <div class="review-form">
+
+            <h3>Deja tu reseña</h3>
+            <form id="reviewForm">
+              <label for="name">Tu Nombre:</label>
+              <input type="text" id="name" name="name" required><br><br>
+
+              <label for="review">Tu Reseña:</label>
+              <textarea id="review" name="review" rows="4" required></textarea><br><br>
+
+              <button type="submit">Enviar Reseña</button>
+            </form>
+
+
+            <!-- Sección para mostrar reseñas -->
+            <div id="reviewList">
+              <h3>Reseñas recientes</h3>
+
+              <!-- Reseñas predefinidas -->
+              <div class="review">
+                <h4>Juan Pérez</h4>
+                <p>Excelente servicio, muy profesional y eficiente. Quedé realmente satisfecho con los resultados.
+                  ¡Totalmente recomendable!</p>
+              </div>
+
+              <div class="review">
+                <h4>María González</h4>
+                <p>La atención fue rápida y de alta calidad. Resolvieron mis problemas en poco tiempo y fueron muy
+                  amables durante todo el proceso.</p>
+              </div>
+
+              <div class="review">
+                <h4>Pedro López</h4>
+                <p>El equipo de trabajo es muy comprometido y los resultados fueron más de lo que esperaba. Sin duda
+                  volveré a contratarlos en el futuro.</p>
+              </div>
+
+              <div class="review">
+                <h4>Ana Martínez</h4>
+                <p>Gran experiencia. Desde el primer contacto hasta la entrega del proyecto, todo fue fluido y muy
+                  profesional. ¡Muy recomendable!</p>
+              </div>
+            </div>
+
+
+
+
+</div>
+</div>
+<footer>
+  <div class="b-example-divider"></div>
+
+  <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24">
+                      <use xlink:href="#bootstrap" />
+                  </svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+              <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                          <path
+                              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                      </svg></a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                          <path
+                              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                      </svg>
+                      <use xlink:href="#instagram" /></svg>
+                  </a></li>
+              <li class="ms-3"><a class="text-body-secondary" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                          width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                          <path
+                              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                      </svg>
+                      <use xlink:href="https://www.facebook.com/" /></svg>
+                      <use xlink:href="#facebook" /></svg>
+                  </a></li>
+          </ul>
+      </footer>
+  </div>
+</footer>
+            <script>
+
+              // Obtener los elementos del DOM
+              const reviewForm = document.getElementById('reviewForm');
+              const reviewList = document.getElementById('reviewList');
+              const confirmationMessage = document.getElementById('confirmationMessage');
+
+              // Función para agregar una reseña al DOM
+              function addReviewToPage(name, review) {
+                const reviewDiv = document.createElement('div');
+                reviewDiv.classList.add('review');
+
+                const reviewContent = `
+        <h4>${name}</h4>
+        <p>${review}</p>
+    `;
+
+                reviewDiv.innerHTML = reviewContent;
+                reviewList.appendChild(reviewDiv);
+              }
+
+              // Función para mostrar un mensaje de confirmación
+              function showConfirmationMessage() {
+                confirmationMessage.style.display = 'block';  // Mostrar el mensaje
+                setTimeout(function () {
+                  confirmationMessage.style.display = 'none';  // Ocultar el mensaje después de 3 segundos
+                }, 3000);
+              }
+
+              // Evento de envío del formulario
+              reviewForm.addEventListener('submit', function (event) {
+                event.preventDefault();  // Evita que se recargue la página
+
+                // Obtener los valores de los campos
+                const name = document.getElementById('name').value;
+                const review = document.getElementById('review').value;
+
+                // Agregar la reseña a la página
+                addReviewToPage(name, review);
+
+                // Mostrar mensaje de confirmación
+                showConfirmationMessage();
+
+                // Limpiar el formulario
+                reviewForm.reset();
+              });
+
+            </script>
+</body>
+
+</html>
